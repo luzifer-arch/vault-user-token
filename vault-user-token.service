@@ -1,0 +1,11 @@
+[Unit]
+Description=Service to renew local vault token
+
+[Service]
+EnvironmentFile=%h/.config/vault-user-token.env
+ExecStart=/usr/bin/vault-user-token --log-level=debug --full-hostname=false
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
