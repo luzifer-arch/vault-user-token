@@ -1,7 +1,7 @@
 # Maintainer: Knut Ahlers <knut at ahlers dot me>
 
 pkgname=vault-user-token
-pkgver=0.5.3
+pkgver=0.5.3 # renovate: depName=Luzifer/vault-user-token datasource=github-releases
 pkgrel=1
 pkgdesc="Constantly renew a Vault token derived from a role id"
 arch=('i686' 'x86_64')
